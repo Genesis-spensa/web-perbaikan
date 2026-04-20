@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Berita - Genesis</title>
+    <meta name="description" content="Kumpulan berita dan pembaruan terbaru dari Organisasi Kita.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="index.html#home">
+                <img src="assets/favicon.svg" alt="Logo" width="28" height="28">
+                <span data-i18n="brand.name">Genesis</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#tentang" data-i18n="nav.tentang">Tentang</a></li>
+                <li><a href="sejarah.html" data-i18n="nav.sejarah">Sejarah</a></li>
+                <li><a href="program.html" data-i18n="nav.program">Program</a></li>
+                <li><a href="berita.html" aria-current="page" data-i18n="nav.berita">Berita</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="kegiatan.html" data-i18n="nav.kegiatan">Kegiatan</a></li>
+                <li><a href="tim.html" data-i18n="nav.tim">Tim</a></li>
+                <li><a class="btn" href="index.html#kontak" data-i18n="nav.kontak_btn">Hubungi Kami</a></li>
+            </ul>
+            <div class="lang-switch" role="group" aria-label="Ganti bahasa">
+                <button class="lang-btn" data-lang="id" aria-pressed="true">ID</button>
+                <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema" title="Ganti tema">
+                <span class="icon" aria-hidden="true">🌓</span>
+                <span class="text" data-i18n="ui.theme">Tema</span>
+            </button>
+            <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section reveal" aria-labelledby="news-title">
+            <div class="container">
+                <h1 id="news-title" data-i18n="berita.title">Berita Terbaru</h1>
+                <p class="intro" data-i18n="berita.intro">Ikuti pembaruan program, cerita dampak, dan publikasi terbaru kami.</p>
+                <div class="searchbar" role="search">
+                    <input id="newsSearch" type="search" data-i18n-placeholder="berita.search_placeholder" placeholder="Cari berita, topik, atau penulis..." aria-label="Cari berita">
+                    <div class="tags" aria-label="Filter kategori">
+                        <button class="tag-btn" data-tag="all" aria-pressed="true" data-i18n="berita.filter.all">Semua</button>
+                        <button class="tag-btn" data-tag="Pendidikan" data-i18n="berita.filter.pendidikan">Pendidikan</button>
+                        <button class="tag-btn" data-tag="Inkubasi" data-i18n="berita.filter.inkubasi">Inkubasi</button>
+                        <button class="tag-btn" data-tag="Riset" data-i18n="berita.filter.riset">Riset</button>
+                        <button class="tag-btn" data-tag="Opini" data-i18n="berita.filter.opini">Opini</button>
+                        <button class="tag-btn" data-tag="Event" data-i18n="berita.filter.event">Event</button>
+                        <button class="tag-btn" data-tag="Pengumuman" data-i18n="berita.filter.pengumuman">Pengumuman</button>
+                        <button class="tag-btn" data-tag="Teknologi" data-i18n="berita.filter.teknologi">Teknologi</button>
+                        <button class="tag-btn" data-tag="Prestasi" data-i18n="berita.filter.prestasi">Prestasi</button>
+                        <button class="tag-btn" data-tag="OSIS" data-i18n="berita.filter.osis">OSIS</button>
+                    </div>
+                </div>
+                <div class="cards" id="newsList">
+                    <article class="card" data-title="Peluncuran Pusat Belajar Komunitas" data-tags="Pendidikan,Program" data-author="Redaksi">
+                        <img src="assets/news1.svg" alt="Ilustrasi berita 1" width="640" height="360" loading="lazy" decoding="async">
+                        <h3><a class="link" href="artikel.html?id=1">Peluncuran Pusat Belajar Komunitas</a></h3>
+                        <p class="muted">07 Okt 2025 · Pendidikan</p>
+                        <p class="news-summary"><span class="news-summary-text">Kami membuka pusat belajar pertama yang menyediakan akses materi digital, mentoring, dan ruang kolaborasi bagi remaja.</span><button type="button" class="read-more-toggle-text read-more-toggle" aria-expanded="false">*Baca selengkapnya*</button></p>
+                    </article>
+                    <article class="card" data-title="Kolaborasi dengan 10 UMKM Lokal" data-tags="Inkubasi,Bisnis" data-author="Redaksi">
+                        <img src="assets/news2.svg" alt="Ilustrasi berita 2" width="640" height="360" loading="lazy" decoding="async">
+                        <h3><a class="link" href="artikel.html?id=2">Kolaborasi dengan 10 UMKM Lokal</a></h3>
+                        <p class="muted">28 Sep 2025 · Inkubasi</p>
+                        <p class="news-summary"><span class="news-summary-text">Program inkubasi batch 3 menggandeng 10 UMKM untuk akselerasi pemasaran, digitalisasi, dan manajemen keuangan.</span><button type="button" class="read-more-toggle-text read-more-toggle" aria-expanded="false">*Baca selengkapnya*</button></p>
+                    </article>
+                    <article class="card" data-title="Rilis Laporan Riset Kebijakan Pendidikan" data-tags="Riset,Pendidikan" data-author="Tim Riset">
+                        <img src="assets/news3.svg" alt="Ilustrasi berita 3" width="640" height="360" loading="lazy" decoding="async">
+                        <h3><a class="link" href="artikel.html?id=3">Rilis Laporan Riset Kebijakan Pendidikan</a></h3>
+                        <p class="muted">15 Sep 2025 · Riset</p>
+                        <p class="news-summary"><span class="news-summary-text">Laporan merekomendasikan model kemitraan sekolah–komunitas untuk peningkatan literasi membaca dini.</span><button type="button" class="read-more-toggle-text read-more-toggle" aria-expanded="false">*Baca selengkapnya*</button></p>
+                    </article>
+                    <article class="card" data-title="Siswa Kita Juara Lomba Jurnalistik" data-tags="Prestasi,OSIS" data-author="Redaksi">
+                        <img src="assets/news1.svg" alt="Prestasi jurnalistik" width="640" height="360" loading="lazy" decoding="async">
+                        <h3><a class="link" href="artikel.html?id=4">Siswa Kita Juara Lomba Jurnalistik</a></h3>
+                        <p class="muted">10 Okt 2025 · Prestasi</p>
+                        <p class="news-summary"><span class="news-summary-text">Tim jurnalistik sekolah meraih juara 1 lomba penulisan berita tingkat kota.</span><button type="button" class="read-more-toggle-text read-more-toggle" aria-expanded="false">*Baca selengkapnya*</button></p>
+                    </article>
+                    <article class="card" data-title="Teknologi Baru di Lab Komputer" data-tags="Teknologi,Pendidikan" data-author="Redaksi">
+                        <img src="assets/news2.svg" alt="Pembaruan lab" width="640" height="360" loading="lazy" decoding="async">
+                        <h3><a class="link" href="artikel.html?id=5">Teknologi Baru di Lab Komputer</a></h3>
+                        <p class="muted">05 Okt 2025 · Teknologi</p>
+                        <p class="news-summary"><span class="news-summary-text">Lab komputer mendapat perangkat baru untuk mendukung pembelajaran coding dan desain.</span><button type="button" class="read-more-toggle-text read-more-toggle" aria-expanded="false">*Baca selengkapnya*</button></p>
+                    </article>
+                    <article class="card" data-title="Pengumuman Seleksi Anggota OSIS" data-tags="OSIS,Pengumuman" data-author="OSIS">
+                        <img src="assets/news3.svg" alt="Pengumuman OSIS" width="640" height="360" loading="lazy" decoding="async">
+                        <h3><a class="link" href="artikel.html?id=6">Pengumuman Seleksi Anggota OSIS</a></h3>
+                        <p class="muted">03 Okt 2025 · Pengumuman</p>
+                        <p class="news-summary"><span class="news-summary-text">Seleksi anggota OSIS dibuka minggu depan, simak syarat dan jadwal pendaftarannya.</span><button type="button" class="read-more-toggle-text read-more-toggle" aria-expanded="false">*Baca selengkapnya*</button></p>
+                    </article>
+                </div>
+                <div style="margin-top:16px; text-align:center;">
+                    <button type="button" class="btn" id="loadMoreNews">Muat lebih banyak</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+            <div class="social" aria-label="Jejak sosial">
+                <a href="https://www.instagram.com/tim_genesis?igsh=bzY0Y2o3N3h3dGti" target="_blank" rel="noopener" aria-label="Instagram">
+                    <span aria-hidden="true"></span>
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@tim_genesis.media?_t=ZS-90bFlp0TlMD&_r=1" target="_blank" rel="noopener" aria-label="Facebook">
+                    <span aria-hidden="true">T</span>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                    <span aria-hidden="true">▶</span>
+                    <span class="sr-only">YouTube</span>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VbBsC5K2ZjCuaY8jbn2c" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <span aria-hidden="true">✆</span>
+                    <span class="sr-only">WhatsApp</span>
+                </a>
+            </div>
+            <p style="margin:0;">© <span id="year"></span> <span data-i18n="brand.name">Genesis</span>. <span data-i18n="footer.rights">Semua hak dilindungi.</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var year = document.getElementById('year');
+            if (year) year.textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
+
+
