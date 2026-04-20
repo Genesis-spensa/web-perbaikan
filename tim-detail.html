@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Profil Anggota Tim - Genesis</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="index.html#home">
+                <img src="assets/favicon.svg" alt="Logo" width="28" height="28">
+                <span>Genesis</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#tentang">Tentang</a></li>
+                <li><a href="sejarah.html">Sejarah</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="berita.html">Berita</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="kegiatan.html">Kegiatan</a></li>
+                <li><a href="tim.html" aria-current="page">Tim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section reveal" aria-labelledby="profil-title">
+            <div class="container">
+                <h1 id="profil-title">Profil Anggota Tim</h1>
+                <div class="cards">
+                    <article class="card">
+                        <div class="person">
+                            <div class="avatar">
+                                <span aria-hidden="true">R</span>
+                            </div>
+                            <h3 id="member-name">rrfkyyy</h3>
+                            <p class="role" id="member-role">Ketua</p>
+                            <p class="desc" id="member-desc">
+                                Deskripsi lebih lengkap mengenai latar belakang, fokus kerja, dan ketertarikan profesional anggota tim.
+                                Anda bisa menyesuaikan konten ini secara manual atau mengganti file ini untuk setiap anggota.
+                            </p>
+                            <p class="email" id="member-email">
+                                <a href="mailto:ketua@genesis.test">ketua@genesis.test</a>
+                            </p>
+                            <div class="mini-social" id="member-social">
+                                <a href="https://www.instagram.com/tim_genesis?igsh=bzY0Y2o3N3h3dGti" target="_blank" rel="noopener">IG</a>
+                                <a href="https://youtube.com" target="_blank" rel="noopener">YT</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h2 style="margin-top:0;font-size:18px;">Catatan Implementasi</h2>
+                        <p style="margin-bottom:10px;font-size:14px;">
+                            Halaman ini masih generik. Untuk benar-benar punya detail unik tiap anggota:
+                        </p>
+                        <ul style="font-size:14px;padding-left:18px;">
+                            <li>Duplikasi file <code>tim-detail.html</code> untuk setiap anggota, atau</li>
+                            <li>Ubah ke PHP dan tarik data dari database berdasarkan <code>?id=</code>, lalu isi elemen dengan data dinamis.</li>
+                        </ul>
+                        <p style="font-size:14px;margin-top:10px;">
+                            Tautan dari halaman <code>tim.html</code> saat ini mengarah ke file ini dengan query
+                            <code>?id=1</code>, <code>?id=2</code>, dan <code>?id=3</code> sebagai contoh.
+                        </p>
+                        <a class="btn ghost small" href="tim.html">← Kembali ke daftar tim</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+            <p style="margin:0;">© <span id="year"></span> Genesis. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var year = document.getElementById('year');
+            if (year) year.textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
+

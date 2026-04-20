@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Tim - Genesis</title>
+    <meta name="description" content="Tim inti dan struktur organisasi.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="index.html#home">
+                <img src="assets/favicon.svg" alt="Logo" width="28" height="28">
+                <span data-i18n="brand.name">Genesis</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#tentang" data-i18n="nav.tentang">Tentang</a></li>
+                <li><a href="sejarah.html" data-i18n="nav.sejarah">Sejarah</a></li>
+                <li><a href="program.html" data-i18n="nav.program">Program</a></li>
+                <li><a href="berita.html" data-i18n="nav.berita">Berita</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="kegiatan.html" data-i18n="nav.kegiatan">Kegiatan</a></li>
+                <li><a href="tim.html" aria-current="page" data-i18n="nav.tim">Tim</a></li>
+                <li><a class="btn" href="index.html#kontak" data-i18n="nav.kontak_btn">Hubungi Kami</a></li>
+            </ul>
+            <div class="lang-switch" role="group" aria-label="Ganti bahasa">
+                <button class="lang-btn" data-lang="id" aria-pressed="true">ID</button>
+                <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema" title="Ganti tema">
+                <span class="icon" aria-hidden="true">🌓</span>
+                <span class="text" data-i18n="ui.theme">Tema</span>
+            </button>
+            <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section reveal" aria-labelledby="tim-title">
+            <div class="container">
+                <h1 id="tim-title" data-i18n="tim.title">Tim Inti</h1>
+                <p class="intro" data-i18n="tim.intro">Kami bekerja lintas disiplin untuk menjalankan misi organisasi.</p>
+                <div class="team">
+                    <!-- Anggota 1 -->
+                    <article class="person">
+                        <div class="avatar">
+                            <span aria-hidden="true">R</span>
+                        </div>
+                        <h3>rrfkyyy</h3>
+                        <p class="role" data-i18n="tim.position.ketua">Ketua</p>
+                        <p class="desc">
+                            Mengarahkan strategi besar Genesis dan memastikan semua program bergerak satu visi.
+                        </p>
+                        <p class="email">
+                            <a href="mailto:ketua@genesis.test">ketua@genesis.test</a>
+                        </p>
+                        <div class="mini-social" aria-label="Media sosial ketua">
+                            <a href="https://www.instagram.com/tim_genesis?igsh=bzY0Y2o3N3h3dGti" target="_blank" rel="noopener">IG</a>
+                            <a href="https://www.tiktok.com/@tim_genesis.media?_t=ZS-90bFlp0TlMD&_r=1" target="_blank" rel="noopener">TT</a>
+                        </div>
+                        <a class="btn ghost small" href="tim-detail.html?id=1">Lihat profil</a>
+                    </article>
+
+                    <!-- Anggota 2 -->
+                    <article class="person">
+                        <div class="avatar">
+                            <span aria-hidden="true">R</span>
+                        </div>
+                        <h3>rrfkyyy</h3>
+                        <p class="role" data-i18n="tim.position.program">Program</p>
+                        <p class="desc">
+                            Mendesain dan mengelola portofolio program belajar, riset, dan kolaborasi komunitas.
+                        </p>
+                        <p class="email">
+                            <a href="mailto:program@genesis.test">program@genesis.test</a>
+                        </p>
+                        <div class="mini-social" aria-label="Media sosial penanggung jawab program">
+                            <a href="https://www.instagram.com/tim_genesis?igsh=bzY0Y2o3N3h3dGti" target="_blank" rel="noopener">IG</a>
+                            <a href="https://youtube.com" target="_blank" rel="noopener">YT</a>
+                        </div>
+                        <a class="btn ghost small" href="tim-detail.html?id=2">Lihat profil</a>
+                    </article>
+
+                    <!-- Anggota 3 -->
+                    <article class="person">
+                        <div class="avatar">
+                            <span aria-hidden="true">R</span>
+                        </div>
+                        <h3>rrfkyyy</h3>
+                        <p class="role" data-i18n="tim.position.operasional">Operasional</p>
+                        <p class="desc">
+                            Menjaga operasional harian, scheduling kegiatan, dan komunikasi lintas mitra.
+                        </p>
+                        <p class="email">
+                            <a href="mailto:ops@genesis.test">ops@genesis.test</a>
+                        </p>
+                        <div class="mini-social" aria-label="Media sosial operasional">
+                            <a href="https://whatsapp.com/channel/0029VbBsC5K2ZjCuaY8jbn2c" target="_blank" rel="noopener">WA</a>
+                        </div>
+                        <a class="btn ghost small" href="tim-detail.html?id=3">Lihat profil</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+            <div class="social" aria-label="Jejak sosial">
+                <a href="https://www.instagram.com/tim_genesis?igsh=bzY0Y2o3N3h3dGti" target="_blank" rel="noopener" aria-label="Instagram">
+                    <span aria-hidden="true"></span>
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@tim_genesis.media?_t=ZS-90bFlp0TlMD&_r=1" target="_blank" rel="noopener" aria-label="Facebook">
+                    <span aria-hidden="true">T</span>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                    <span aria-hidden="true">▶</span>
+                    <span class="sr-only">YouTube</span>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VbBsC5K2ZjCuaY8jbn2c" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <span aria-hidden="true">✆</span>
+                    <span class="sr-only">WhatsApp</span>
+                </a>
+            </div>
+            <p style="margin:0;">© <span id="year"></span> <span data-i18n="brand.name">Genesis</span>. <span data-i18n="footer.rights">Semua hak dilindungi.</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var year = document.getElementById('year');
+            if (year) year.textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
+
+

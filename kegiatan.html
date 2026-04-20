@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Kegiatan - Genesis</title>
+    <meta name="description" content="Kegiatan dan acara terbaru dari Organisasi Kita.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="index.html#home">
+                <img src="assets/favicon.svg" alt="Logo" width="28" height="28">
+                <span data-i18n="brand.name">Genesis</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#tentang" data-i18n="nav.tentang">Tentang</a></li>
+                <li><a href="sejarah.html" data-i18n="nav.sejarah">Sejarah</a></li>
+                <li><a href="program.html" data-i18n="nav.program">Program</a></li>
+                <li><a href="berita.html" data-i18n="nav.berita">Berita</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="kegiatan.html" aria-current="page" data-i18n="nav.kegiatan">Kegiatan</a></li>
+                <li><a href="tim.html" data-i18n="nav.tim">Tim</a></li>
+                <li><a class="btn" href="index.html#kontak" data-i18n="nav.kontak_btn">Hubungi Kami</a></li>
+            </ul>
+            <div class="lang-switch" role="group" aria-label="Ganti bahasa">
+                <button class="lang-btn" data-lang="id" aria-pressed="true">ID</button>
+                <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema" title="Ganti tema">
+                <span class="icon" aria-hidden="true">🌓</span>
+                <span class="text" data-i18n="ui.theme">Tema</span>
+            </button>
+            <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section reveal" aria-labelledby="kegiatan-title">
+            <div class="container">
+                <h1 id="kegiatan-title" data-i18n="kegiatan.title">Kegiatan & Acara</h1>
+                <p class="intro" data-i18n="kegiatan.intro">Ikuti kegiatan terbaru dan acara menarik yang kami selenggarakan untuk komunitas.</p>
+                
+                <!-- Kegiatan Mendatang -->
+                <div class="section">
+                    <h2 data-i18n="kegiatan.upcoming">Kegiatan Mendatang</h2>
+                    <div class="cards">
+                        <article class="card">
+                            <h3>Workshop Digital Marketing</h3>
+                            <p><strong data-i18n="kegiatan.date">Tanggal:</strong> 15 Desember 2024</p>
+                            <p><strong data-i18n="kegiatan.time">Waktu:</strong> 09:00 - 16:00 WIB</p>
+                            <p><strong data-i18n="kegiatan.location">Lokasi:</strong> Ruang Seminar Utama</p>
+                            <p>Pelatihan intensif tentang strategi digital marketing untuk UMKM dan startup.</p>
+                            <a class="link" href="index.html#kontak" data-i18n="kegiatan.register">Daftar Sekarang →</a>
+                        </article>
+                        <article class="card">
+                            <h3>Diskusi Panel: AI & Masa Depan Kerja</h3>
+                            <p><strong data-i18n="kegiatan.date">Tanggal:</strong> 22 Desember 2024</p>
+                            <p><strong data-i18n="kegiatan.time">Waktu:</strong> 14:00 - 17:00 WIB</p>
+                            <p><strong data-i18n="kegiatan.location">Lokasi:</strong> Auditorium</p>
+                            <p>Diskusi mendalam tentang dampak AI terhadap dunia kerja dan peluang karir masa depan.</p>
+                            <a class="link" href="index.html#kontak" data-i18n="kegiatan.register">Daftar Sekarang →</a>
+                        </article>
+                        <article class="card">
+                            <h3>Networking Event: Tech Community</h3>
+                            <p><strong data-i18n="kegiatan.date">Tanggal:</strong> 28 Desember 2024</p>
+                            <p><strong data-i18n="kegiatan.time">Waktu:</strong> 18:00 - 21:00 WIB</p>
+                            <p><strong data-i18n="kegiatan.location">Lokasi:</strong> Co-working Space</p>
+                            <p>Acara networking untuk para profesional teknologi dan entrepreneur.</p>
+                            <a class="link" href="index.html#kontak" data-i18n="kegiatan.register">Daftar Sekarang →</a>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Kegiatan Berlangsung -->
+                <div class="section">
+                    <h2 data-i18n="kegiatan.ongoing">Kegiatan Berlangsung</h2>
+                    <div class="cards">
+                        <article class="card">
+                            <h3>Program Inkubasi Batch 4</h3>
+                            <p><strong data-i18n="kegiatan.duration">Durasi:</strong> 3 Bulan (Okt 2024 - Jan 2025)</p>
+                            <p><strong data-i18n="kegiatan.participants">Peserta:</strong> 15 Startup Terpilih</p>
+                            <p>Program mentoring intensif untuk startup tahap awal dengan fokus pada validasi pasar dan pengembangan produk.</p>
+                            <a class="link" href="program.html" data-i18n="kegiatan.view_details">Lihat Detail Program →</a>
+                        </article>
+                        <article class="card">
+                            <h3>Kelas Online: Data Science untuk Pemula</h3>
+                            <p><strong data-i18n="kegiatan.duration">Durasi:</strong> 8 Minggu</p>
+                            <p><strong data-i18n="kegiatan.format">Format:</strong> Online Learning</p>
+                            <p>Kelas pembelajaran online tentang dasar-dasar data science dengan proyek praktis.</p>
+                            <a class="link" href="index.html#kontak" data-i18n="kegiatan.join_now">Bergabung Sekarang →</a>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Kegiatan Selesai -->
+                <div class="section">
+                    <h2 data-i18n="kegiatan.completed">Kegiatan Terlaksana</h2>
+                    <ul class="timeline">
+                        <li>
+                            <span class="time">Nov 2024</span>
+                            <div class="item">
+                                <strong>Konferensi Teknologi 2024</strong><br>
+                                Acara tahunan dengan 500+ peserta, 20+ pembicara, dan 3 track parallel.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="time">Okt 2024</span>
+                            <div class="item">
+                                <strong>Hackathon: Solusi Digital untuk Pendidikan</strong><br>
+                                Kompetisi 48 jam dengan 25 tim peserta menghasilkan 15 prototipe solusi.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="time">Sep 2024</span>
+                            <div class="item">
+                                <strong>Lokakarya Data Dasar untuk UMKM</strong><br>
+                                Pelatihan analisis data sederhana untuk membantu pengambilan keputusan bisnis.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="time">Agu 2024</span>
+                            <div class="item">
+                                <strong>Peluncuran Program Inkubasi Batch 3</strong><br>
+                                Dimulainya program inkubasi dengan 12 startup terpilih.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="time">Jul 2024</span>
+                            <div class="item">
+                                <strong>Diskusi Publik: AI untuk Pendidikan</strong><br>
+                                Panel diskusi tentang implementasi AI dalam sistem pendidikan Indonesia.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="section cta">
+                    <h2 data-i18n="kegiatan.participate_title">Ingin Berpartisipasi?</h2>
+                    <p data-i18n="kegiatan.participate_desc">Bergabunglah dengan kegiatan kami atau ajukan ide kegiatan baru untuk komunitas.</p>
+                    <a class="btn primary" href="index.html#kontak" data-i18n="nav.kontak_btn">Hubungi Kami</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+            <div class="social" aria-label="Jejak sosial">
+                <a href="https://www.instagram.com/tim_genesis?igsh=bzY0Y2o3N3h3dGti" target="_blank" rel="noopener" aria-label="Instagram">
+                    <span aria-hidden="true"></span>
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@tim_genesis.media?_t=ZS-90bFlp0TlMD&_r=1" target="_blank" rel="noopener" aria-label="Facebook">
+                    <span aria-hidden="true">T</span>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                    <span aria-hidden="true">▶</span>
+                    <span class="sr-only">YouTube</span>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VbBsC5K2ZjCuaY8jbn2c" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <span aria-hidden="true">✆</span>
+                    <span class="sr-only">WhatsApp</span>
+                </a>
+            </div>
+            <p style="margin:0;">© <span id="year"></span> <span data-i18n="brand.name">Genesis</span>. <span data-i18n="footer.rights">Semua hak dilindungi.</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var year = document.getElementById('year');
+            if (year) year.textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
